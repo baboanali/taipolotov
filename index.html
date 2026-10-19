@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Веб-клуб — День 2</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <h1>Веб-клуб</h1>
+    </header>
+
+    <main>
+      <section class="cards">
+        <article class="card">
+          <h2>Новости</h2>
+          <p>Добро пожаловать в наш клуб!</p>
+        </article>
+        <article class="card">
+          <h2>Мероприятия</h2>
+          <p>Скоро новое событие.</p>
+        </article>
+      </section>
+
+      <section id="join" class="join">
+        <h2>Знакомство с участником</h2>
+        <p class="subtitle">
+          Учебная демонстрация. Данные никуда не отправляются.
+        </p>
+
+        <div class="field">
+          <label for="visitor-name">Ваше имя</label>
+          <input
+            id="visitor-name"
+            type="text"
+            maxlength="40"
+            autocomplete="off"
+            placeholder="Например, Анна"
+          />
+        </div>
+
+        <button id="join-button" class="button" type="button">
+          <span>Поприветствовать</span>
+        </button>
+
+        <p id="message" class="message" role="status">
+          Здесь появится сообщение.
+        </p>
+      </section>
+    </main>
+  </body>
+</html>
